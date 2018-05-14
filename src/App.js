@@ -8,7 +8,7 @@ import './App.css';
 
 //import Auth from './Auth/Auth.js';
 //import { Navbar, Button } from 'react-bootstrap';
-
+import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
 //import { Button } from 'reactstrap';
 
 class App extends Component {
@@ -64,17 +64,35 @@ class App extends Component {
   render() {
 
     return (
-     
+      
       <div className="tasksWrapper">
           <div className="tasksHeader">
-          <div className="heading">To do list, so you don't forget anything
-           
+            <div>
+              <Navbar>
+                <Navbar.Header>
+                  <Navbar.Brand>
+                    <a href="#home">TODOLIST+BOOTSTRAP</a>
+                  </Navbar.Brand>
+                </Navbar.Header>
+                <Nav>
+                  <NavItem eventKey={1} href="#">
+                    Sign in
+                  </NavItem>
+                  <NavItem eventKey={2} href="#">
+                    Sign Up
+                  </NavItem>
+                  <NavItem eventKey={3} href="#">
+                    Log Out
+                  </NavItem>
+                </Nav>
+              </Navbar>
+            </div>
           </div>
-          </div>
+          
+          <div className="tasksBody">
           <div className="tasksBlock">
             <TaskFrame addTask={this.addTask}/>
           </div>
-          <div className="tasksBody">
             {
               this.state.tasks.map((task) => {
                 return (

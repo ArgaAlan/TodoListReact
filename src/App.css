@@ -32,6 +32,27 @@ body {
   flex: 1 1 5%;
   min-height: 2em;
   max-height: 2em;
+  text-align: center;
+  align-content: center;
+  padding: 20px 0px 15px 0px;
+  margin-bottom: 6px;
+  background-color: rgba(0,0,0,0.5);
+  display: block;
+}
+.tasksBlock {
+  display: flex;
+  flex: 1 1 5%;
+  min-height: 2em;
+  max-height: 2em;
+  margin-bottom: 20px;
+ 
+}
+
+/*.tasksHeader {
+  display: flex;
+  flex: 1 1 5%;
+  min-height: 2em;
+  max-height: 2em;
   font-size: 3.2em;
   color: #FFFFFF;
   font-family: 'Source Sans Pro', sans-serif;
@@ -42,10 +63,10 @@ body {
   background-color: rgba(0,0,0,0.5);
   text-shadow: 3px 3px 10px #000;
   display: block;
-}
+}*/
 
 .tasksBody {
-  padding-top: 24px;
+  padding-top: 50px;
   display: flex;
   flex: 1 1 85%;
   flex-wrap: wrap;
