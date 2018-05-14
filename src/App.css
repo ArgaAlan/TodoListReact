@@ -1,0 +1,73 @@
+html{
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  min-height:100%;
+  background: 
+    linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(0, 40, 105, 0.8)),
+    url('./Static/img/gif.gif');
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+* {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.tasksWrapper {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tasksHeader {
+  display: flex;
+  flex: 1 1 5%;
+  min-height: 2em;
+  max-height: 2em;
+  font-size: 3.2em;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  align-content: center;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 6px;
+  background-color: rgba(0,0,0,0.5);
+  text-shadow: 3px 3px 10px #000;
+  display: block;
+}
+
+.tasksBody {
+  padding-top: 24px;
+  display: flex;
+  flex: 1 1 85%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+.tasksFooter {
+  display: flex;
+  flex: 1 1 5%;
+  background-color: rgba(0,0,0,0.5);
+  /*
+  position: fixed;
+  bottom:0;
+  left: 0;
+   right:0;
+   */
+}
+
+.tasksBlock {
+  display: flex;
+  flex: 1 1 5%;
+  /*background-color: rgba(0,0,0,0.5);*/
+}
