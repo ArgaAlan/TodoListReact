@@ -17,10 +17,12 @@ handleRemoveTask(id){
     render(props){
         return(
             <div className="task fade-in">
+            <a href="https://giphy.com/explore/random">
                 <span className="closebtn"
                       onClick={() => this.handleRemoveTask(this.taskId)}>
                       &#9932;
                 </span>
+            </a>
                 <p className="taskContent">{ this.taskContent }</p>
 
                 <input type="hidden" role="uploadcare-uploader" name="content"
